@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Partymaker</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Construction Company Website Template" name="keywords">
+    <meta content="Construction Company Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/p1.jpg" alt=" " class="img-responsive" height="50px" width="220px" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hour</h3>
+                                        <p>Mon - Fri, 8:00 - 9:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p>+012 345 6789</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="partyvenues.html" class="nav-item nav-link">Venues</a>
+         
+                            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                            <a href="login.html" class="nav-item nav-link">login</a>
+                            
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
+                                    <a href="single.html" class="dropdown-item">News & recent posts</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <body2>
+  
+            <div id="login-box">
+              <div class="left">
+                <h1 id='status'>login</h1>
+                <input type="text" id="email" name="email" placeholder="E-mail" />
+                <input type="password" id="password" name="password" placeholder="Password" />
+                
+                <input type="submit" id='login' name="login" value="Login" />
+            
+              </div>
+              
+              <div class="right">
+                <span class="loginwith">Sign in with<br />social network</span>
+                
+                <button class="social-signin facebook">Log in with facebook</button>
+                <button class="social-signin twitter">Log in with Twitter</button>
+                <button class="social-signin google">Log in with Google+</button>
+              </div>
+              <div class="or">OR</div>
+            </div>
+            </body2>
+            
+            <script type="module">
+              // Import the functions you need from the SDKs you need
+              import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+              import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+              import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+              // TODO: Add SDKs for Firebase products that you want to use
+              // https://firebase.google.com/docs/web/setup#available-libraries
+            
+              // Your web app's Firebase configuration
+              const firebaseConfig = {
+                apiKey: "AIzaSyCljvAvy9hBUW8g_AnwNd9hjNlTrhZokzk",
+                authDomain: "authentication-app-618fa.firebaseapp.com",
+                databaseURL: "https://authentication-app-618fa-default-rtdb.firebaseio.com",
+                projectId: "authentication-app-618fa",
+                storageBucket: "authentication-app-618fa.appspot.com",
+                messagingSenderId: "674916245226",
+                appId: "1:674916245226:web:e380d7e0d081f52342c193"
+              };
+            
+              // Initialize Firebase
+              const app = initializeApp(firebaseConfig);
+              const database = getDatabase(app);
+              const auth = getAuth();
+            
+            sighUp.addEventListener('click',(e) => {
+            
+              var email = document.getElementById('email').value;
+              var password = document.getElementById('password').value;
+              var username = document.getElementById('username').value;
+            
+              createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                 // Signed in 
+                  const user = userCredential.user;
+            
+                  set(ref(database, 'users/' + user.uid),{
+                      username: username,
+                      email: email
+                  })
+            
+                  alert('user created!');
+                  // ...
+                })
+                .catch((error) => {
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+            
+                  alert(errorMessage);
+                // ..
+                });
+            
+            });
+            
+             login.addEventListener('click',(e)=>{
+               var email = document.getElementById('email').value;
+               var password = document.getElementById('password').value;
+            
+                  signInWithEmailAndPassword(auth, email, password)
+                  .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+            
+                    const dt = new Date();
+                     update(ref(database, 'users/' + user.uid),{
+                      last_login: dt,
+                    })
+            
+                     alert('User loged in!');
+                    // ...
+                  })
+                  .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+            
+                    alert(errorMessage);
+              });
+            
+             });
+            
+            const user = auth.currentUser;
+            onAuthStateChanged(auth, (user) => {
+              if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                const uid = user.uid;
+                //bla bla bla
+                // ...
+              } else {
+                // User is signed out
+                // ...
+                //bla bla bla
+              }
+            });
+            
+            logout.addEventListener('click',(e)=>{
+            
+               signOut(auth).then(() => {
+                 // Sign-out successful.
+                 alert('user loged out');
+               }).catch((error) => {
+                 // An error happened.
+                 const errorCode = error.code;
+                 const errorMessage = error.message;
+            
+                    alert(errorMessage);
+               });
+            
+            });
+            
+            </script>
+
+
+       <!-- Footer Start -->
+       <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-contact">
+                        <h2>Office Contact</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>123 Street Mirpur, Dhaka, Bangladesh</p>
+                        <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope"></i>info@example.com</p>
+                        <div class="footer-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-link">
+                        <h2>Services Areas</h2>
+                        <a href="">Party venues</a>
+                        <a href="">Catering & Food</a>
+                        <a href="">Decorations</a>
+                        <a href="">Photography</a>
+                        <a href="">Bridal gowns</a>
+                        <a href="">Painting</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-link">
+                        <h2>Useful Pages</h2>
+                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <a href="service.html" class="nav-item nav-link active">Service</a>
+                        <a href="partyvenues.html" class="nav-item nav-link">Venues</a>
+                        <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="newsletter">
+                        <h2>Find us</h2>
+                        <p>
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="315" height="211" id="gmap_canvas" src="https://maps.google.com/maps?q=Mirpur%20DOHS&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:211px;width:315px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:211px;width:315px;}</style></div></div>
+                        </p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-menu">
+            <div class="f-menu">
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">Partymaker</a>, All Right Reserved.</p>
+                </div>
+
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <div class="col-md-6">
+                    <p>Designed By Jubair Ahmed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
